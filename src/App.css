@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #F7ECDC;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.create-group-btn {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.create-group-btn:hover {
+  background-color: #333;
+}
+
+.groups-list {
+  list-style: none;
+  padding: 0;
+}
+
+.group-btn-1 {
+  padding:1rem;
+  border: none;
+  border-radius: 3rem;
+  background-color: blue;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0.1rem;
+}
+
+
+.group-btn-2 {
+  /* display: block; */
+  /* width: 100%; */
+  /* padding: 0.5rem 1rem; */
+  border: none;
+  background-color: #f0f0f0;
+  /* margin-bottom: 0.5rem;
+  cursor: pointer; */
+  margin-bottom: 0.1rem;
+}
+
+.group-btn:hover {
+  background-color: #ddd;
+}
+
+.notes-section {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.notes-container {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.notes-list {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #E8E8E8;
+  background-color: #E8E8E8;
+  margin-bottom: 1rem;
+}
+
+.note {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.note small {
+  display: block;
+  color: #555;
+}
+
+.welcome-section {
+  border: 2px solid black;
+  padding: 2rem;
+  text-align: center;
+}
+
+.welcome-section img {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 30%;
+  }
+
+  .welcome-section img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 40%;
+  }
+
+  .welcome-section img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
